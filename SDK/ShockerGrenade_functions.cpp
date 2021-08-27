@@ -1,0 +1,77 @@
+
+#include "../SDK.h"
+
+// Name: WeHappyFew, Version: 1.8.8
+
+#ifdef _MSC_VER
+	#pragma pack(push, 0x8)
+#endif
+
+namespace SDK
+{
+//---------------------------------------------------------------------------
+// Functions
+//---------------------------------------------------------------------------
+
+// Function ShockerGrenade.ShockerGrenade_C.UserConstructionScript
+// (Event, Public, BlueprintCallable, BlueprintEvent)
+
+void AShockerGrenade_C::UserConstructionScript()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function ShockerGrenade.ShockerGrenade_C.UserConstructionScript");
+
+	AShockerGrenade_C_UserConstructionScript_Params params;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function ShockerGrenade.ShockerGrenade_C.OnWeaponThrown
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// class APawn**                  ThrowerPawn                    (Parm, ZeroConstructor, IsPlainOldData)
+
+void AShockerGrenade_C::OnWeaponThrown(class APawn** ThrowerPawn)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function ShockerGrenade.ShockerGrenade_C.OnWeaponThrown");
+
+	AShockerGrenade_C_OnWeaponThrown_Params params;
+	params.ThrowerPawn = ThrowerPawn;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function ShockerGrenade.ShockerGrenade_C.BndEvt__InteractionComponent_K2Node_ComponentBoundEvent_24_InteractionSignature__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class APawn*                   InteractSource                 (Parm, ZeroConstructor, IsPlainOldData)
+
+void AShockerGrenade_C::BndEvt__InteractionComponent_K2Node_ComponentBoundEvent_24_InteractionSignature__DelegateSignature(class APawn* InteractSource)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function ShockerGrenade.ShockerGrenade_C.BndEvt__InteractionComponent_K2Node_ComponentBoundEvent_24_InteractionSignature__DelegateSignature");
+
+	AShockerGrenade_C_BndEvt__InteractionComponent_K2Node_ComponentBoundEvent_24_InteractionSignature__DelegateSignature_Params params;
+	params.InteractSource = InteractSource;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+}
+
+#ifdef _MSC_VER
+	#pragma pack(pop)
+#endif

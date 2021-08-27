@@ -1,0 +1,36 @@
+#pragma once
+
+#include "../SDK.h"
+
+// Name: WeHappyFew, Version: 1.8.8
+
+#ifdef _MSC_VER
+	#pragma pack(push, 0x8)
+#endif
+
+namespace SDK
+{
+//---------------------------------------------------------------------------
+// Parameters
+//---------------------------------------------------------------------------
+
+// Function AkActor.AkActor_C.PlaySound
+struct AAkActor_C_PlaySound_Params
+{
+};
+
+// Function AkActor.AkActor_C.UserConstructionScript
+struct AAkActor_C_UserConstructionScript_Params
+{
+};
+
+// Function AkActor.AkActor_C.ReceiveBeginPlay
+struct AAkActor_C_ReceiveBeginPlay_Params
+{
+};
+
+}
+
+#ifdef _MSC_VER
+	#pragma pack(pop)
+#endif
